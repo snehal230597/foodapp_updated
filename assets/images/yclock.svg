@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <g data-name="Group 4390" transform="translate(-30 -387)">
+        <circle data-name="Ellipse 2972" cx="12" cy="12" r="12" transform="translate(30 387)" style="fill:#ffbc00;opacity:.1"/>
+        <g data-name="clock" transform="translate(36 393)">
+            <circle cx="6" cy="6" r="6" style="fill:none;stroke:#ffbc00;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"/>
+            <path d="M0 0v3.692h3.692" transform="translate(5.538 2.769)" style="fill:none;stroke:#ffbc00;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"/>
+        </g>
+    </g>
+</svg>

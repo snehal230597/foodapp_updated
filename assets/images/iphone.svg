@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+    <g data-name="Group 4423" transform="translate(-20 -504)">
+        <circle data-name="Ellipse 2973" cx="15" cy="15" r="15" transform="translate(20 504)" style="fill:#1dbf73;opacity:.1"/>
+        <path d="m10.014 9.264-1.222 1.528a12.89 12.89 0 0 1-4.584-4.584l1.528-1.222a1.038 1.038 0 0 0 .3-1.232L4.643.617a1.038 1.038 0 0 0-1.21-.583L.781.721A1.046 1.046 0 0 0 .01 1.875 15.407 15.407 0 0 0 13.125 14.99a1.044 1.044 0 0 0 1.153-.771l.688-2.651a1.038 1.038 0 0 0-.583-1.21l-3.137-1.393a1.04 1.04 0 0 0-1.232.299z" transform="translate(28 512)" style="fill:none;stroke:#1dbf73;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" data-name="Icon/Information/Phone"/>
+    </g>
+</svg>

@@ -1,0 +1,19 @@
+<svg data-name="icons/promo" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+    <defs>
+        <linearGradient id="dih3ynim9a" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#23d2c3" stop-opacity=".6"/>
+            <stop offset="1" stop-color="#01bcad"/>
+        </linearGradient>
+        <clipPath id="vkov13t91b">
+            <path d="M22 18H2a2 2 0 0 1-2-2v-4a.5.5 0 0 1 .5-.5 2.5 2.5 0 0 0 0-5A.5.5 0 0 1 0 6V2a2 2 0 0 1 2-2h20a2 2 0 0 1 2 2v4a.5.5 0 0 1-.5.5 2.5 2.5 0 0 0 0 5 .5.5 0 0 1 .5.5v4a2 2 0 0 1-2 2zM6.5 14a.5.5 0 0 0-.5.5v1a.5.5 0 1 0 1 0v-1a.5.5 0 0 0-.5-.5zM16 9a2.3 2.3 0 0 0-2 2.5 2.3 2.3 0 0 0 2 2.5 2.3 2.3 0 0 0 2-2.5A2.3 2.3 0 0 0 16 9zm.5-5a.5.5 0 0 0-.416.223l-6 9a.5.5 0 1 0 .832.554l6-9a.5.5 0 0 0-.139-.693A.507.507 0 0 0 16.5 4zm-10 6a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 1 0v-1a.5.5 0 0 0-.5-.5zM11 4a2.3 2.3 0 0 0-2 2.5A2.3 2.3 0 0 0 11 9a2.3 2.3 0 0 0 2-2.5A2.3 2.3 0 0 0 11 4zM6.5 6a.5.5 0 0 0-.5.5v1a.5.5 0 1 0 1 0v-1a.5.5 0 0 0-.5-.5zm0-4.126a.5.5 0 0 0-.5.5V3.5a.5.5 0 0 0 1 0V2.375a.5.5 0 0 0-.5-.5z" style="fill:url(#dih3ynim9a)"/>
+        </clipPath>
+    </defs>
+    <circle cx="25" cy="25" r="25" style="opacity:.1;fill:url(#dih3ynim9a)"/>
+    <path data-name="Shape" d="M22 18H2a2 2 0 0 1-2-2v-4a.5.5 0 0 1 .5-.5 2.5 2.5 0 0 0 0-5A.5.5 0 0 1 0 6V2a2 2 0 0 1 2-2h20a2 2 0 0 1 2 2v4a.5.5 0 0 1-.5.5 2.5 2.5 0 0 0 0 5 .5.5 0 0 1 .5.5v4a2 2 0 0 1-2 2zM6.5 14a.5.5 0 0 0-.5.5v1a.5.5 0 1 0 1 0v-1a.5.5 0 0 0-.5-.5zM16 9a2.3 2.3 0 0 0-2 2.5 2.3 2.3 0 0 0 2 2.5 2.3 2.3 0 0 0 2-2.5A2.3 2.3 0 0 0 16 9zm.5-5a.5.5 0 0 0-.416.223l-6 9a.5.5 0 1 0 .832.554l6-9a.5.5 0 0 0-.139-.693A.507.507 0 0 0 16.5 4zm-10 6a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 1 0v-1a.5.5 0 0 0-.5-.5zM11 4a2.3 2.3 0 0 0-2 2.5A2.3 2.3 0 0 0 11 9a2.3 2.3 0 0 0 2-2.5A2.3 2.3 0 0 0 11 4zM6.5 6a.5.5 0 0 0-.5.5v1a.5.5 0 1 0 1 0v-1a.5.5 0 0 0-.5-.5zm0-4.126a.5.5 0 0 0-.5.5V3.5a.5.5 0 0 0 1 0V2.375a.5.5 0 0 0-.5-.5z" transform="translate(13 16)" style="fill:#fff"/>
+    <g data-name="Group 3885" transform="translate(13 16)" style="clip-path:url(#vkov13t91b)">
+        <g data-name="Colors/Primary">
+            <path data-name="Colors/Primary background" style="fill:url(#dih3ynim9a)" d="M0 0h30v30H0z" transform="translate(-3 -6)"/>
+            <path data-name="Rectangle 3" style="fill:url(#dih3ynim9a)" d="M0 0h30v30H0z" transform="translate(-3 -6)"/>
+        </g>
+    </g>
+</svg>

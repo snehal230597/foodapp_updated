@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+    <defs>
+        <linearGradient id="h8vthimxva" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#ff461e"/>
+            <stop offset="1" stop-color="#ff1054"/>
+        </linearGradient>
+    </defs>
+    <g transform="translate(-301 -54)">
+        <circle data-name="Ellipse 2967" cx="25" cy="25" r="25" transform="translate(301 54)" style="fill:#1dbf73;opacity:.1"/>
+        <g data-name="Cart" transform="translate(186 -684)">
+            <path data-name="Icon awesome-shopping-cart" d="m24.769 14.132 2.217-9.755A1.126 1.126 0 0 0 25.888 3H7.467L7.037.9a1.126 1.126 0 0 0-1.1-.9H1.126A1.126 1.126 0 0 0 0 1.126v.75A1.126 1.126 0 0 0 1.126 3H4.4l3.3 16.109a2.627 2.627 0 1 0 3.144.4h9.832a2.626 2.626 0 1 0 2.983-.488l.259-1.139a1.126 1.126 0 0 0-1.1-1.375H10.23l-.307-1.5h13.748a1.126 1.126 0 0 0 1.098-.875z" transform="translate(125 748.987)" style="fill:url(#h8vthimxva)"/>
+            <circle data-name="Ellipse 81" cx="8.5" cy="8.5" r="8.5" transform="translate(141 740)" style="fill:#fff"/>
+            <text data-name="2" transform="translate(147 752)" style="fill:#ff2e36;font-size:10px;font-family:Roboto-Bold,Roboto;font-weight:700"><tspan x="0" y="0">2</tspan></text>
+        </g>
+    </g>
+</svg>

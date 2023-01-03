@@ -1,0 +1,7 @@
+<svg data-name="icon / check" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+    <path style="fill:none" d="M0 0h20v20H0z"/>
+    <g transform="translate(1.667 1.667)">
+        <circle cx="8.333" cy="8.333" r="8.333" style="fill:#ff2e36"/>
+        <path d="M3.643 7.367a.507.507 0 0 1-.361-.151L.15 4.049a.52.52 0 0 1 0-.731.507.507 0 0 1 .723 0l2.77 2.8L9.544.152a.507.507 0 0 1 .723 0 .521.521 0 0 1 0 .731L4 7.216a.507.507 0 0 1-.357.151z" transform="translate(3.125 5.217)" style="fill:#fff" data-name="correct (1)"/>
+    </g>
+</svg>

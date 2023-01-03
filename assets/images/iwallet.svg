@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+    <g data-name="Group 4426" transform="translate(-20 -626)">
+        <circle data-name="Ellipse 2976" cx="15" cy="15" r="15" transform="translate(20 626)" style="fill:#1dbf73;opacity:.1"/>
+        <g transform="translate(27 633)" data-name="Icon/Information/Cost">
+            <circle cx="1.5" cy="1.5" r="1.5" transform="translate(9 8)" style="fill:none;stroke:#1dbf73;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"/>
+            <path d="M0 2v11a2 2 0 0 0 2 2h13V4H2a2 2 0 0 1-2-2h0a2 2 0 0 1 2-2h9v2" style="fill:none;stroke:#1dbf73;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"/>
+        </g>
+    </g>
+</svg>

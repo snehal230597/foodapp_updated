@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35">
+    <defs>
+        <linearGradient id="wvd5g08ela" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#00bce5" stop-opacity=".6"/>
+            <stop offset="1" stop-color="#02aacf"/>
+        </linearGradient>
+    </defs>
+    <circle data-name="Ellipse 2970" cx="17.5" cy="17.5" r="17.5" style="fill:url(#wvd5g08ela);opacity:.1"/>
+    <g data-name="Icon ionic-ios-cash">
+        <path data-name="Path 18830" d="M23.007 25.024H2.92a.67.67 0 0 0 0 1.339h20.087a.67.67 0 0 0 0-1.339z" transform="translate(4.75 -2.833)" style="fill:url(#wvd5g08ela)"/>
+        <path data-name="Path 18831" d="M23.007 28.4H2.92a.67.67 0 0 0 0 1.339h20.087a.67.67 0 0 0 0-1.339z" transform="translate(4.75 -3.913)" style="fill:url(#wvd5g08ela)"/>
+        <path data-name="Path 18832" d="M22 5.632H3.929A1.684 1.684 0 0 0 2.25 7.311v8.5a1.684 1.684 0 0 0 1.679 1.679H22a1.684 1.684 0 0 0 1.679-1.679v-8.5A1.684 1.684 0 0 0 22 5.632zM6.172 15.963H4.45a.67.67 0 1 1 0-1.339h1.722a.67.67 0 1 1 0 1.339zm0-7.461H4.45a.67.67 0 1 1 0-1.339h1.722a.67.67 0 1 1 0 1.339zm6.792 6.887a3.826 3.826 0 1 1 3.826-3.826 3.831 3.831 0 0 1-3.827 3.826zm8.513.574h-1.722a.67.67 0 0 1 0-1.339h1.722a.67.67 0 1 1 0 1.339zm0-7.461h-1.722a.67.67 0 1 1 0-1.339h1.722a.67.67 0 1 1 0 1.339z" transform="translate(4.75 3.368)" style="fill:url(#wvd5g08ela)"/>
+        <path data-name="Path 18833" d="M19.343 13.293a2.535 2.535 0 1 1-2.535-2.535 2.535 2.535 0 0 1 2.535 2.535z" transform="translate(.905 1.729)" style="fill:url(#wvd5g08ela)"/>
+    </g>
+</svg>

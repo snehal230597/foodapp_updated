@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35">
+    <defs>
+        <linearGradient id="7fdfkjmkma" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#6c4dda" stop-opacity=".6"/>
+            <stop offset="1" stop-color="#522ed2"/>
+        </linearGradient>
+    </defs>
+    <circle data-name="Ellipse 2969" cx="17.5" cy="17.5" r="17.5" style="fill:url(#7fdfkjmkma);opacity:.1"/>
+    <g data-name="icon / temple">
+        <path d="M19.985 6.951h-.869V0h-1.738v6.951H13.9V0h-1.735v6.951H8.689V0H6.951v6.951H3.476V0H1.738v6.951H.869a.869.869 0 0 0 0 1.738h19.116a.869.869 0 0 0 0-1.738z" transform="translate(7 18.738)" style="fill:url(#7fdfkjmkma)"/>
+        <path d="M20.125 10H.875A.893.893 0 0 1 0 9.091V6.363a.913.913 0 0 1 .456-.8L10.081.11a.851.851 0 0 1 .839 0l9.625 5.455a.914.914 0 0 1 .456.8v2.726a.893.893 0 0 1-.876.909zM10.5 3.636a1.787 1.787 0 0 0-1.75 1.818 1.751 1.751 0 1 0 3.5 0 1.787 1.787 0 0 0-1.75-1.818z" transform="translate(7.427 7)" style="fill:url(#7fdfkjmkma)"/>
+        <path transform="translate(7.427 7)" style="fill:none" d="M0 0h20v20H0z"/>
+    </g>
+</svg>

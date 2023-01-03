@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="44" height="79.572" viewBox="0 0 44 79.572">
+    <defs>
+        <linearGradient id="xncfzdf2da" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#ff461e"/>
+            <stop offset="1" stop-color="#ff1054"/>
+        </linearGradient>
+    </defs>
+    <g transform="translate(-191 -241.428)">
+        <circle data-name="Ellipse 113" cx="22" cy="22" r="22" transform="translate(191 277)" style="opacity:.15;fill:#ff2e36"/>
+        <circle data-name="Ellipse 114" cx="12" cy="12" r="12" transform="translate(201 287)" style="fill:#ff2e36"/>
+        <path data-name="Icon ionic-ios-pin" d="M21.425 3.375c-7.481 0-13.55 5.636-13.55 12.581 0 9.786 13.55 26.564 13.55 26.564s13.55-16.778 13.55-26.564c0-6.945-6.069-12.581-13.55-12.581zm0 17.963a4.413 4.413 0 1 1 4.413-4.413 4.413 4.413 0 0 1-4.413 4.413z" transform="translate(193.125 238.053)" style="fill:url(#xncfzdf2da)"/>
+    </g>
+</svg>

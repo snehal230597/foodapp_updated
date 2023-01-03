@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+    <g data-name="Group 4424" transform="translate(-20 -543)">
+        <circle data-name="Ellipse 2974" cx="15" cy="15" r="15" transform="translate(20 543)" style="fill:#1dbf73;opacity:.1"/>
+        <g data-name="Icon/Information/Email">
+            <path d="M14 13H1a1 1 0 0 1-1-1V1a1 1 0 0 1 1-1h13a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1z" transform="translate(28 552)" style="fill:none;stroke:#1dbf73;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"/>
+            <path data-name="Path" d="m0 0 5.5 4.5L11 0" transform="translate(30 555)" style="fill:none;stroke:#1dbf73;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"/>
+        </g>
+    </g>
+</svg>
