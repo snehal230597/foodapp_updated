@@ -3,7 +3,7 @@ import 'package:food_app/screens/welcome2.dart';
 import 'package:food_app/widgets/welcome_container.dart';
 
 class WelcomeScreen extends StatelessWidget {
-   WelcomeScreen({Key? key}) : super(key: key);
+  const WelcomeScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -41,14 +41,12 @@ class WelcomeScreen extends StatelessWidget {
             right: 00,
             left: 00,
             child: WelcomeScreenContainer(
-              title: "Welcome to Foodio",
+                title: "Welcome to Foodio",
                 color1: Colors.black,
                 color2: Colors.white,
                 color3: Colors.white,
-              onTap: () =>
-                Navigator.of(context).push(MaterialPageRoute(builder: (_) => WelcomeScreen2()))
-
-            ),
+                onTap: () => Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (_) => const WelcomeScreen2()))),
           ),
         ],
       ),

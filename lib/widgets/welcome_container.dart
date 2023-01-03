@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_app/comman_widgets/comman_button.dart';
 import 'package:food_app/screens/welcome.dart';
 
 import '../screens/welcome2.dart';
@@ -30,7 +31,7 @@ class _WelcomeScreenContainerState extends State<WelcomeScreenContainer> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
         borderRadius: BorderRadius.only(
             topLeft: Radius.circular(30), topRight: Radius.circular(30)),
         gradient: LinearGradient(
@@ -43,14 +44,14 @@ class _WelcomeScreenContainerState extends State<WelcomeScreenContainer> {
         ),
       ),
       child: Padding(
-        padding: EdgeInsets.only(top: 45, bottom: 45),
+        padding: const EdgeInsets.only(top: 45, bottom: 45),
         child: Column(
           children: [
             Padding(
               padding: EdgeInsets.only(top: 0),
               child: Text(
                 widget.title!,
-                style: TextStyle(
+                style: const TextStyle(
                     color: Color(0xffffffff),
                     fontWeight: FontWeight.w700,
                     fontFamily: "muli",
@@ -58,7 +59,7 @@ class _WelcomeScreenContainerState extends State<WelcomeScreenContainer> {
                     fontSize: 30.0),
               ),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             const Text(
                 "Reference site about Lorem\n  Ipsum, giving information origins\n as well as a random",
                 style: TextStyle(
@@ -95,9 +96,9 @@ class _WelcomeScreenContainerState extends State<WelcomeScreenContainer> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Icon(Icons.circle, size: 14, color: widget.color1),
-                SizedBox(width: 10),
+                const SizedBox(width: 10),
                 Icon(Icons.circle, size: 14, color: widget.color2),
-                SizedBox(width: 10),
+                const SizedBox(width: 10),
                 Icon(Icons.circle, size: 14, color: widget.color3),
               ],
             ),

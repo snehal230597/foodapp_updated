@@ -1,9 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:food_app/comman_widgets/comman_button.dart';
 import 'package:food_app/screens/forget_password1.dart';
 import 'package:food_app/screens/navigation_screen.dart';
 import 'package:food_app/screens/sign_up2.dart';
+import 'package:food_app/utils/util_colors.dart';
+import 'package:sizer/sizer.dart';
 
 class SignInProfile extends StatefulWidget {
+  const SignInProfile({Key? key}) : super(key: key);
+
   @override
   State<SignInProfile> createState() => _SignInProfileState();
 }
@@ -11,10 +16,10 @@ class SignInProfile extends StatefulWidget {
 class _SignInProfileState extends State<SignInProfile> {
   bool valueFirst = false;
 
-  List<FocusNode> _focusNodes = [
+  final List<FocusNode> _focusNodes = [
     FocusNode(),
   ];
-  List<FocusNode> _focusNodes1 = [
+  final List<FocusNode> _focusNodes1 = [
     FocusNode(),
   ];
 
@@ -27,13 +32,13 @@ class _SignInProfileState extends State<SignInProfile> {
           elevation: 0.5,
           backgroundColor: Colors.white,
           centerTitle: true,
-          iconTheme: IconThemeData(color: Colors.black),
+          iconTheme: const IconThemeData(color: Colors.black),
           leading: IconButton(
               onPressed: () {
                 Navigator.of(context).pop();
               },
-              icon: Icon(Icons.arrow_back_ios)),
-          title: Text(
+              icon: const Icon(Icons.arrow_back_ios)),
+          title: const Text(
             'Sign In',
             style: TextStyle(
               color: Colors.black,
@@ -58,20 +63,20 @@ class _SignInProfileState extends State<SignInProfile> {
                   ),
                 ),
                 SizedBox(height: 40),
-                Text(
+                const Text(
                   "Welcome Back Snehal",
-                  style: const TextStyle(
-                      color: const Color(0xffff2e36),
+                  style: TextStyle(
+                      color: Color(0xffff2e36),
                       fontWeight: FontWeight.w600,
                       fontFamily: "muli",
                       fontStyle: FontStyle.normal,
                       fontSize: 22.0),
                 ),
                 SizedBox(height: 10),
-                Text(
+                const Text(
                   "Sign in to continue",
-                  style: const TextStyle(
-                      color: const Color(0xff262b2e),
+                  style: TextStyle(
+                      color: Color(0xff262b2e),
                       fontWeight: FontWeight.w400,
                       fontFamily: "muli",
                       fontStyle: FontStyle.normal,
@@ -99,10 +104,10 @@ class _SignInProfileState extends State<SignInProfile> {
                   decoration: InputDecoration(
                     fillColor: Color(0xfff4f5f7),
                     filled: true,
-                    focusedBorder: OutlineInputBorder(
+                    focusedBorder: const OutlineInputBorder(
                       borderSide: BorderSide(color: Colors.transparent),
                     ),
-                    enabledBorder: OutlineInputBorder(
+                    enabledBorder: const OutlineInputBorder(
                         borderSide: BorderSide(color: Colors.transparent)),
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(10),
@@ -115,7 +120,7 @@ class _SignInProfileState extends State<SignInProfile> {
                           : Colors.grey,
                     ),
                     hintText: 'Email',
-                    hintStyle: TextStyle(
+                    hintStyle: const TextStyle(
                         fontSize: 15,
                         height: 4 / 5,
                         fontWeight: FontWeight.bold),
@@ -142,10 +147,10 @@ class _SignInProfileState extends State<SignInProfile> {
                   decoration: InputDecoration(
                     fillColor: Color(0xfff4f5f7),
                     filled: true,
-                    focusedBorder: OutlineInputBorder(
+                    focusedBorder: const OutlineInputBorder(
                       borderSide: BorderSide(color: Colors.transparent),
                     ),
-                    enabledBorder: OutlineInputBorder(
+                    enabledBorder: const OutlineInputBorder(
                         borderSide: BorderSide(color: Colors.transparent)),
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(10),
@@ -159,7 +164,7 @@ class _SignInProfileState extends State<SignInProfile> {
                           : Colors.grey,
                     ),
                     hintText: 'Password',
-                    hintStyle: TextStyle(
+                    hintStyle: const TextStyle(
                         fontSize: 15,
                         height: 4 / 5,
                         fontWeight: FontWeight.bold),
@@ -178,19 +183,19 @@ class _SignInProfileState extends State<SignInProfile> {
                             fit: BoxFit.fill,
                             child: Checkbox(
                               checkColor: Colors.white,
-                              activeColor: Color(0xffFF2E36),
-                              value: this.valueFirst,
+                              activeColor: const Color(0xffFF2E36),
+                              value: valueFirst,
                               onChanged: (bool? value) {
                                 setState(() {
-                                  this.valueFirst = value!;
+                                  valueFirst = value!;
                                 });
                               },
                             ),
                           ),
                         ),
-                        Text(
+                        const Text(
                           "Remember me",
-                          style: const TextStyle(
+                          style: TextStyle(
                               color: Colors.black54,
                               fontWeight: FontWeight.w400,
                               fontFamily: "muli",
@@ -208,10 +213,10 @@ class _SignInProfileState extends State<SignInProfile> {
                                 MaterialPageRoute(
                                     builder: (_) => ForgetPassword1()));
                           },
-                          child: Text(
+                          child: const Text(
                             "Forget password ?",
-                            style: const TextStyle(
-                                color: const Color(0xffff2e36),
+                            style: TextStyle(
+                                color: Color(0xffff2e36),
                                 fontFamily: "muli",
                                 fontStyle: FontStyle.normal,
                                 fontWeight: FontWeight.w400,
@@ -223,8 +228,8 @@ class _SignInProfileState extends State<SignInProfile> {
                   ],
                 ),
                 SizedBox(height: 40),
-                InkWell(
-                  onTap: () {
+                CommonButtonView(
+                  onPressed: () {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
@@ -232,41 +237,25 @@ class _SignInProfileState extends State<SignInProfile> {
                       ),
                     );
                   },
-                  child: Container(
-                    height: 50,
-                    width: MediaQuery.of(context).size.width,
-                    decoration: BoxDecoration(
-                      gradient: LinearGradient(
-                          begin: Alignment(0.5, 0),
-                          end: Alignment(0.5, 1),
-                          colors: [
-                            const Color(0xffff461e),
-                            const Color(0xffff1054)
-                          ]),
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                    child: Center(
-                      child: Text(
-                        'Sign In',
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontFamily: "muli",
-                          fontStyle: FontStyle.normal,
-                          fontSize: 17,
-                          fontWeight: FontWeight.w600,
-                        ),
-                      ),
-                    ),
-                  ),
+                  height: 6.2.h,
+                  width: 100.w,
+                  title: 'Sign In',
+                  fontColor: Colors.white,
+                  fontSize: 17,
+                  fontWeight: FontWeight.w600,
+                  fontFamily: "muli",
+                  fontStyle: FontStyle.normal,
+                  gradianClist: [redGradiant1,redGradiant2],
+                  isGradient: true,
                 ),
                 SizedBox(height: 20),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text(
+                    const Text(
                       "Already have an account?",
-                      style: const TextStyle(
-                          color: const Color(0xff000000),
+                      style: TextStyle(
+                          color: Color(0xff000000),
                           fontFamily: "muli",
                           fontStyle: FontStyle.normal,
                           fontWeight: FontWeight.w400,
@@ -278,9 +267,9 @@ class _SignInProfileState extends State<SignInProfile> {
                         Navigator.of(context).push(
                             MaterialPageRoute(builder: (_) => SignUpScreen2()));
                       },
-                      child: Text(
+                      child: const Text(
                         "Sign up!",
-                        style: const TextStyle(
+                        style: TextStyle(
                             color: Color(0xffff2e36),
                             fontWeight: FontWeight.bold,
                             fontSize: 16.0),

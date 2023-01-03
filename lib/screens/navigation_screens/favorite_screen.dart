@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:food_app/screens/notification.dart';
+import 'package:food_app/comman_widgets/common_appbar.dart';
 import 'package:food_app/widgets/button.dart';
 
 class FavoriteScreen extends StatefulWidget {
@@ -13,34 +13,41 @@ class _FavoriteScreenState extends State<FavoriteScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        elevation: 0.5,
-        backgroundColor: Colors.white,
-        centerTitle: true,
-        iconTheme: IconThemeData(color: Colors.black),
-        leading: Icon(Icons.arrow_back_ios),
-        title: Text(
-          'Favorite Items',
-          style: TextStyle(
-            color: Colors.black,
-            fontWeight: FontWeight.w700,
-          ),
-        ),
-        actions: [
-          Padding(
-            padding: const EdgeInsets.only(right: 15),
-            child: InkWell(
-                onTap: () {
-                  Navigator.of(context).push(
-                    MaterialPageRoute(
-                      builder: (_) => NotificationScreen(),
-                    ),
-                  );
-                },
-                child: Icon(Icons.notifications, color: Color(0xffFF2E36))),
-          ),
-        ],
+      appBar: PreferredSize(
+        preferredSize: const Size.fromHeight(60),
+        child: CommonAppbar(
+          fontColor: Colors.black,
+            centerTitle: true,
+            title: "About Us", shadowColor: Colors.white, isBackEnable: true),
       ),
+      // AppBar(
+      //   elevation: 0.5,
+      //   backgroundColor: Colors.white,
+      //   centerTitle: true,
+      //   iconTheme: IconThemeData(color: Colors.black),
+      //   leading: Icon(Icons.arrow_back_ios),
+      //   title: const Text(
+      //     'Favorite Items',
+      //     style: TextStyle(
+      //       color: Colors.black,
+      //       fontWeight: FontWeight.w700,
+      //     ),
+      //   ),
+      //   actions: [
+      //     Padding(
+      //       padding: const EdgeInsets.only(right: 15),
+      //       child: InkWell(
+      //           onTap: () {
+      //             Navigator.of(context).push(
+      //               MaterialPageRoute(
+      //                 builder: (_) => NotificationScreen(),
+      //               ),
+      //             );
+      //           },
+      //           child: Icon(Icons.notifications, color: Color(0xffFF2E36))),
+      //     ),
+      //   ],
+      // ),
       body: ListView.builder(
         shrinkWrap: true,
         itemCount: 4,

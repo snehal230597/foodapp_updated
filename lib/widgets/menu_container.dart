@@ -50,9 +50,9 @@ class _MenuContainerState extends State<MenuContainer> {
                           children: [
                             Row(
                               children: [
-                                Text("Cheesy Roll Dhosa",
-                                    style: const TextStyle(
-                                        color: const Color(0xff262b2e),
+                                const Text("Cheesy Roll Dhosa",
+                                    style: TextStyle(
+                                        color: Color(0xff262b2e),
                                         fontWeight: FontWeight.w600,
                                         fontFamily: "Muli",
                                         fontStyle: FontStyle.normal,
@@ -64,11 +64,11 @@ class _MenuContainerState extends State<MenuContainer> {
                                 FavButton(),
                               ],
                             ),
-                            Padding(
-                              padding: const EdgeInsets.only(top: 8),
+                            const Padding(
+                              padding: EdgeInsets.only(top: 8),
                               child: Text(
                                 "sells food, either fresh,specie,chilli",
-                                style: const TextStyle(
+                                style: TextStyle(
                                     color: Colors.black38,
                                     fontWeight: FontWeight.w600,
                                     fontSize: 12.0),
@@ -77,7 +77,7 @@ class _MenuContainerState extends State<MenuContainer> {
                             Padding(
                               padding: const EdgeInsets.only(top: 0),
                               child: Row(
-                                children: [
+                                children: const [
                                   Icon(
                                     Icons.star,
                                     color: Color(0xffffbc00),
@@ -94,8 +94,8 @@ class _MenuContainerState extends State<MenuContainer> {
                                   SizedBox(width: 10),
                                   Text(
                                     "4.9",
-                                    style: const TextStyle(
-                                        color: const Color(0xff000000),
+                                    style: TextStyle(
+                                        color: Color(0xff000000),
                                         fontWeight: FontWeight.w600,
                                         fontSize: 12.0),
                                   ),
@@ -124,10 +124,10 @@ class _MenuContainerState extends State<MenuContainer> {
                                           child: Container(
                                             height: 23,
                                             width: 23,
-                                            decoration: BoxDecoration(
+                                            decoration: const BoxDecoration(
                                                 shape: BoxShape.circle,
                                                 color: Colors.black12),
-                                            child: Center(
+                                            child: const Center(
                                               child: Icon(
                                                 Icons.remove,
                                                 color: Colors.red,
@@ -164,10 +164,10 @@ class _MenuContainerState extends State<MenuContainer> {
                                           child: Container(
                                             height: 23,
                                             width: 23,
-                                            decoration: BoxDecoration(
+                                            decoration: const BoxDecoration(
                                                 shape: BoxShape.circle,
                                                 color: Color(0xffFF2E36)),
-                                            child: Center(
+                                            child: const Center(
                                               child: Icon(
                                                 Icons.add,
                                                 color: Colors.white,
@@ -182,10 +182,10 @@ class _MenuContainerState extends State<MenuContainer> {
                                   SizedBox(
                                       width:
                                           MediaQuery.of(context).size.width * 0.2),
-                                  Text(
+                                  const Text(
                                     "₹99.00",
-                                    style: const TextStyle(
-                                        color: const Color(0xffff2e36),
+                                    style: TextStyle(
+                                        color: Color(0xffff2e36),
                                         fontWeight: FontWeight.w600,
                                         fontSize: 12.0),
                                   )

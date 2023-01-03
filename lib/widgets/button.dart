@@ -3,6 +3,8 @@ import 'package:flutter_svg/svg.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
 class FavButton extends StatefulWidget {
+  const FavButton({Key? key}) : super(key: key);
+
 
   @override
   State<FavButton> createState() => _FavButtonState();
@@ -30,8 +32,8 @@ class _FavButtonState extends State<FavButton> {
         );
       },
       child: _isFav
-          ? Icon(Icons.favorite_outline, color: Colors.black54)
-          : Icon(Icons.favorite, color: Colors.red),
+          ? const Icon(Icons.favorite_outline, color: Colors.black54)
+          : const Icon(Icons.favorite, color: Colors.red),
     );
   }
   showAlertDialog1(BuildContext context) {
@@ -46,10 +48,10 @@ class _FavButtonState extends State<FavButton> {
           width: MediaQuery.of(context).size.width,
           child: Column(
             children: [
-              Text(
+              const Text(
                 "        Are you sure  \n  you want to Unfavorite?",
-                style: const TextStyle(
-                    color: const Color(0xff262b2e),
+                style: TextStyle(
+                    color: Color(0xff262b2e),
                     fontWeight: FontWeight.w400,
                     fontSize: 16.0),
               ),
@@ -66,13 +68,13 @@ class _FavButtonState extends State<FavButton> {
                         width: 120,
                         height: 40,
                         decoration: BoxDecoration(
-                            borderRadius: BorderRadius.all(Radius.circular(10)),
+                            borderRadius: const BorderRadius.all(Radius.circular(10)),
                             color: const Color(0xfffe2121).withOpacity(0.1)),
-                        child: Center(
+                        child: const Center(
                           child: Text(
                             "Cancel",
-                            style: const TextStyle(
-                                color: const Color(0xfffe2121),
+                            style: TextStyle(
+                                color: Color(0xfffe2121),
                                 fontWeight: FontWeight.w600,
                                 fontSize: 16.0),
                           ),
@@ -93,22 +95,22 @@ class _FavButtonState extends State<FavButton> {
                       child: Container(
                         width: 120,
                         height: 40,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           borderRadius: BorderRadius.all(Radius.circular(10)),
                           gradient: LinearGradient(
                             begin: Alignment(0.5, 0),
                             end: Alignment(0.5, 1),
                             colors: [
-                              const Color(0xffff461e),
-                              const Color(0xffff1054)
+                              Color(0xffff461e),
+                              Color(0xffff1054)
                             ],
                           ),
                         ),
-                        child: Center(
+                        child: const Center(
                           child: Text(
                             "Sure",
-                            style: const TextStyle(
-                                color: const Color(0xffffffff),
+                            style: TextStyle(
+                                color: Color(0xffffffff),
                                 fontWeight: FontWeight.w600,
                                 fontSize: 16.0),
                           ),
@@ -177,9 +179,9 @@ class _CheckButtonState extends State<CheckButton> {
           ? Container(
               height: 18,
               width: 18,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                   shape: BoxShape.circle, color: Color(0xffFF2E36)),
-              child: Center(
+              child: const Center(
                 child: Icon(Icons.done, color: Colors.white, size: 15),
               ),
             )
@@ -187,8 +189,8 @@ class _CheckButtonState extends State<CheckButton> {
               height: 18,
               width: 18,
               decoration:
-                  BoxDecoration(shape: BoxShape.circle, color: Colors.grey),
-              child: Center(
+                  const BoxDecoration(shape: BoxShape.circle, color: Colors.grey),
+              child: const Center(
                 child: Icon(Icons.done, color: Colors.white, size: 15),
               ),
             ),
