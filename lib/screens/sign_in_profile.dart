@@ -6,6 +6,9 @@ import 'package:food_app/screens/sign_up2.dart';
 import 'package:food_app/utils/util_colors.dart';
 import 'package:sizer/sizer.dart';
 
+import '../comman_widgets/common_appbar.dart';
+import '../utils/utils.dart';
+
 class SignInProfile extends StatefulWidget {
   const SignInProfile({Key? key}) : super(key: key);
 
@@ -28,26 +31,47 @@ class _SignInProfileState extends State<SignInProfile> {
     return GestureDetector(
       onTap: () => FocusScope.of(context).unfocus(),
       child: Scaffold(
-        appBar: AppBar(
-          elevation: 0.5,
-          backgroundColor: Colors.white,
-          centerTitle: true,
-          iconTheme: const IconThemeData(color: Colors.black),
-          leading: IconButton(
+        appBar: CommonAppbar(
+            fontColor: Colors.black,
+            centerTitle: true,
+            title: 'Sign In',
+            fontFamily: "muli",
+            backgroundColor: Colors.white,
+            shadowColor: Colors.white,
+            iconTheme:  IconThemeData(color: Colors.black),
+            fontWeight: FontWeight.w700,
+            rPadding: 5,
+            lIcon: IconButton(
               onPressed: () {
-                Navigator.of(context).pop();
+                Utils.routsfunction(context, Container(), "back");
               },
-              icon: const Icon(Icons.arrow_back_ios)),
-          title: const Text(
-            'Sign In',
-            style: TextStyle(
-              color: Colors.black,
-              fontFamily: "muli",
-              fontStyle: FontStyle.normal,
-              fontWeight: FontWeight.w700,
+              icon:  Icon(
+                Icons.arrow_back_ios,
+                color: Colors.black,
+              ),
             ),
-          ),
-        ),
+            istrailingIcon: false,
+            isBackEnable: true),
+        // AppBar(
+        //   elevation: 0.5,
+        //   backgroundColor: Colors.white,
+        //   centerTitle: true,
+        //   iconTheme: const IconThemeData(color: Colors.black),
+        //   leading: IconButton(
+        //       onPressed: () {
+        //         Navigator.of(context).pop();
+        //       },
+        //       icon: const Icon(Icons.arrow_back_ios)),
+        //   title: const Text(
+        //     'Sign In',
+        //     style: TextStyle(
+        //       color: Colors.black,
+        //       fontFamily: "muli",
+        //       fontStyle: FontStyle.normal,
+        //       fontWeight: FontWeight.w700,
+        //     ),
+        //   ),
+        // ),
         body: SingleChildScrollView(
           child: Padding(
             padding: const EdgeInsets.only(top: 40, left: 20, right: 20),

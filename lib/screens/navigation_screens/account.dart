@@ -1,9 +1,11 @@
 import 'package:dotted_line/dotted_line.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:food_app/screens/google_map.dart';
 import 'package:food_app/screens/splash_screen.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
+
+import '../../comman_widgets/common_appbar.dart';
+import '../../utils/utils.dart';
 
 class AccountScreen extends StatelessWidget {
   static final CameraPosition _kGooglePlex = const CameraPosition(
@@ -12,23 +14,28 @@ class AccountScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        elevation: 0.5,
-        backgroundColor: Colors.white,
-        centerTitle: true,
-        iconTheme: IconThemeData(color: Colors.black),
-        leading: IconButton(
-            onPressed: () {
-              Navigator.of(context).pop();
-            },
-            icon: Icon(Icons.arrow_back_ios)),
-        title: Text(
-          'Account',
-          style: TextStyle(
-            color: Colors.black,
+      appBar: PreferredSize(
+        preferredSize: Size.fromHeight(55),
+        child: CommonAppbar(
+            fontColor: Colors.black,
+            centerTitle: true,
+            title: 'Account',
+            backgroundColor: Colors.white,
+            shadowColor: Colors.white,
+            iconTheme: const IconThemeData(color: Colors.black),
             fontWeight: FontWeight.w700,
-          ),
-        ),
+            rPadding: 5,
+            lIcon: IconButton(
+              onPressed: () {
+                Utils.routsfunction(context, Container(), "back");
+              },
+              icon: const Icon(
+                Icons.arrow_back_ios,
+                color: Colors.black,
+              ),
+            ),
+            istrailingIcon: false,
+            isBackEnable: true),
       ),
       body: Padding(
         padding: const EdgeInsets.only(top: 40, left: 15, right: 15),
@@ -55,20 +62,20 @@ class AccountScreen extends StatelessWidget {
                         padding: const EdgeInsets.only(left: 15),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
+                          children: const [
                             Text(
                               "Snehal Prajapati",
-                              style: const TextStyle(
-                                  color: const Color(0xffff2e36),
+                              style: TextStyle(
+                                  color: Color(0xffff2e36),
                                   fontWeight: FontWeight.w600,
                                   fontSize: 16.0),
                             ),
                             Padding(
-                              padding: const EdgeInsets.only(top: 5),
+                              padding: EdgeInsets.only(top: 5),
                               child: Text(
                                 "+91 7698062066",
-                                style: const TextStyle(
-                                    color: const Color(0xff8a8d9f),
+                                style: TextStyle(
+                                    color: Color(0xff8a8d9f),
                                     fontWeight: FontWeight.w400,
                                     fontSize: 16.0),
                               ),
@@ -93,20 +100,20 @@ class AccountScreen extends StatelessWidget {
                         padding: const EdgeInsets.only(left: 20),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
+                          children: const [
                             Text(
                               "Membership points",
-                              style: const TextStyle(
-                                  color: const Color(0xff000000),
+                              style: TextStyle(
+                                  color: Color(0xff000000),
                                   fontWeight: FontWeight.w400,
                                   fontSize: 16.0),
                             ),
                             Padding(
-                              padding: const EdgeInsets.only(top: 5),
+                              padding: EdgeInsets.only(top: 5),
                               child: Text(
                                 "100 pts",
-                                style: const TextStyle(
-                                    color: const Color(0xffff2e36),
+                                style: TextStyle(
+                                    color: Color(0xffff2e36),
                                     fontWeight: FontWeight.w400,
                                     fontSize: 12.0),
                               ),
@@ -141,19 +148,19 @@ class AccountScreen extends StatelessWidget {
                       padding: const EdgeInsets.only(left: 20),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
+                        children: const [
                           Text(
                             "Choose another store",
-                            style: const TextStyle(
-                                color: const Color(0xff000000),
+                            style: TextStyle(
+                                color: Color(0xff000000),
                                 fontWeight: FontWeight.w400,
                                 fontSize: 16.0),
                           ),
                           Padding(
-                            padding: const EdgeInsets.only(top: 5),
+                            padding: EdgeInsets.only(top: 5),
                             child: Text(
                               "Pick Your Store",
-                              style: const TextStyle(
+                              style: TextStyle(
                                   color: Colors.black54,
                                   fontWeight: FontWeight.w400,
                                   fontSize: 12.0),
@@ -164,7 +171,7 @@ class AccountScreen extends StatelessWidget {
                     ),
                   ],
                 ),
-                Icon(
+                const Icon(
                   Icons.arrow_forward_ios,
                   color: Colors.black38,
                   size: 18,
@@ -197,19 +204,19 @@ class AccountScreen extends StatelessWidget {
                         padding: const EdgeInsets.only(left: 20),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
+                          children: const [
                             Text(
                               "My Address",
-                              style: const TextStyle(
-                                  color: const Color(0xff000000),
+                              style: TextStyle(
+                                  color: Color(0xff000000),
                                   fontWeight: FontWeight.w400,
                                   fontSize: 16.0),
                             ),
                             Padding(
-                              padding: const EdgeInsets.only(top: 5),
+                              padding: EdgeInsets.only(top: 5),
                               child: Text(
                                 "Manage delivery address",
-                                style: const TextStyle(
+                                style: TextStyle(
                                     color: Colors.black54,
                                     fontWeight: FontWeight.w400,
                                     fontSize: 12.0),
@@ -220,7 +227,7 @@ class AccountScreen extends StatelessWidget {
                       ),
                     ],
                   ),
-                  Icon(
+                  const Icon(
                     Icons.arrow_forward_ios,
                     color: Colors.black38,
                     size: 18,
@@ -245,19 +252,19 @@ class AccountScreen extends StatelessWidget {
                       padding: const EdgeInsets.only(left: 20),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
+                        children: const [
                           Text(
                             "About Use",
-                            style: const TextStyle(
-                                color: const Color(0xff000000),
+                            style: TextStyle(
+                                color: Color(0xff000000),
                                 fontWeight: FontWeight.w400,
                                 fontSize: 16.0),
                           ),
                           Padding(
-                            padding: const EdgeInsets.only(top: 5),
+                            padding: EdgeInsets.only(top: 5),
                             child: Text(
                               "Terms of use",
-                              style: const TextStyle(
+                              style: TextStyle(
                                   color: Colors.black54,
                                   fontWeight: FontWeight.w400,
                                   fontSize: 12.0),
@@ -268,7 +275,7 @@ class AccountScreen extends StatelessWidget {
                     ),
                   ],
                 ),
-                Icon(
+                const Icon(
                   Icons.arrow_forward_ios,
                   color: Colors.black38,
                   size: 18,
@@ -292,19 +299,19 @@ class AccountScreen extends StatelessWidget {
                       padding: const EdgeInsets.only(left: 20),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
+                        children: const [
                           Text(
                             "Languages",
-                            style: const TextStyle(
-                                color: const Color(0xff000000),
+                            style: TextStyle(
+                                color: Color(0xff000000),
                                 fontWeight: FontWeight.w400,
                                 fontSize: 16.0),
                           ),
                           Padding(
-                            padding: const EdgeInsets.only(top: 5),
+                            padding: EdgeInsets.only(top: 5),
                             child: Text(
                               "English",
-                              style: const TextStyle(
+                              style: TextStyle(
                                   color: Colors.black54,
                                   fontWeight: FontWeight.w400,
                                   fontSize: 12.0),
@@ -315,7 +322,7 @@ class AccountScreen extends StatelessWidget {
                     ),
                   ],
                 ),
-                Icon(
+                const Icon(
                   Icons.arrow_forward_ios,
                   color: Colors.black38,
                   size: 18,
@@ -343,11 +350,11 @@ class AccountScreen extends StatelessWidget {
                         padding: const EdgeInsets.only(left: 20),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
+                          children: const [
                             Text(
                               "Logout",
-                              style: const TextStyle(
-                                  color: const Color(0xff000000),
+                              style: TextStyle(
+                                  color: Color(0xff000000),
                                   fontWeight: FontWeight.w400,
                                   fontSize: 16.0),
                             ),
@@ -356,7 +363,7 @@ class AccountScreen extends StatelessWidget {
                       ),
                     ],
                   ),
-                  Icon(
+                  const Icon(
                     Icons.arrow_forward_ios,
                     color: Colors.black38,
                     size: 18,
@@ -390,10 +397,10 @@ showAlertDialog(BuildContext context) {
         width: MediaQuery.of(context).size.width,
         child: Column(
           children: [
-            Text(
+            const Text(
               "        Are you sure  \n  you want to sign out?",
-              style: const TextStyle(
-                  color: const Color(0xff262b2e),
+              style: TextStyle(
+                  color: Color(0xff262b2e),
                   fontWeight: FontWeight.w400,
                   fontSize: 16.0),
             ),
@@ -412,11 +419,11 @@ showAlertDialog(BuildContext context) {
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.all(Radius.circular(10)),
                           color: const Color(0xfffe2121).withOpacity(0.1)),
-                      child: Center(
+                      child: const Center(
                         child: Text(
                           "Cancel",
-                          style: const TextStyle(
-                              color: const Color(0xfffe2121),
+                          style: TextStyle(
+                              color: Color(0xfffe2121),
                               fontWeight: FontWeight.w600,
                               fontSize: 16.0),
                         ),
@@ -431,20 +438,20 @@ showAlertDialog(BuildContext context) {
                     child: Container(
                       width: 120,
                       height: 40,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                           borderRadius: BorderRadius.all(Radius.circular(10)),
                           gradient: LinearGradient(
                               begin: Alignment(0.5, 0),
                               end: Alignment(0.5, 1),
                               colors: [
-                                const Color(0xffff461e),
-                                const Color(0xffff1054)
+                                Color(0xffff461e),
+                                Color(0xffff1054)
                               ])),
-                      child: Center(
+                      child: const Center(
                         child: Text(
                           "Sure",
-                          style: const TextStyle(
-                              color: const Color(0xffffffff),
+                          style: TextStyle(
+                              color: Color(0xffffffff),
                               fontWeight: FontWeight.w600,
                               fontSize: 16.0),
                         ),

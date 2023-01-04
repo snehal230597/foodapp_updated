@@ -2,7 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:food_app/comman_widgets/common_appbar.dart';
 import 'package:food_app/widgets/button.dart';
 
+import '../../utils/utils.dart';
+import '../notification.dart';
+
 class FavoriteScreen extends StatefulWidget {
+  const FavoriteScreen({Key? key}) : super(key: key);
+
   @override
   State<FavoriteScreen> createState() => _FavoriteScreenState();
 }
@@ -13,41 +18,38 @@ class _FavoriteScreenState extends State<FavoriteScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      //using commomAppBar here....
       appBar: PreferredSize(
-        preferredSize: const Size.fromHeight(60),
+        preferredSize: Size.fromHeight(55),
         child: CommonAppbar(
-          fontColor: Colors.black,
+            fontColor: Colors.black,
             centerTitle: true,
-            title: "About Us", shadowColor: Colors.white, isBackEnable: true),
+            title: 'Favorite Items',
+            backgroundColor: Colors.white,
+            shadowColor: Colors.white,
+            iconTheme: const IconThemeData(color: Colors.black),
+            fontWeight: FontWeight.w700,
+            rPadding: 5,
+            istrailingIcon: true,
+            lIcon: IconButton(
+              onPressed: () {
+                Utils.routsfunction(context, Container(), "back");
+              },
+              icon: const Icon(
+                Icons.arrow_back_ios,
+                color: Colors.black,
+              ),
+            ),
+            tIcon: IconButton(
+              onPressed: () {
+                Utils.routsfunction(context, NotificationScreen(), "push");
+              },
+              icon: const Icon(Icons.notifications),
+              color: const Color(0xffFF2E36),
+            ),
+            isBackEnable: true),
       ),
-      // AppBar(
-      //   elevation: 0.5,
-      //   backgroundColor: Colors.white,
-      //   centerTitle: true,
-      //   iconTheme: IconThemeData(color: Colors.black),
-      //   leading: Icon(Icons.arrow_back_ios),
-      //   title: const Text(
-      //     'Favorite Items',
-      //     style: TextStyle(
-      //       color: Colors.black,
-      //       fontWeight: FontWeight.w700,
-      //     ),
-      //   ),
-      //   actions: [
-      //     Padding(
-      //       padding: const EdgeInsets.only(right: 15),
-      //       child: InkWell(
-      //           onTap: () {
-      //             Navigator.of(context).push(
-      //               MaterialPageRoute(
-      //                 builder: (_) => NotificationScreen(),
-      //               ),
-      //             );
-      //           },
-      //           child: Icon(Icons.notifications, color: Color(0xffFF2E36))),
-      //     ),
-      //   ],
-      // ),
+
       body: ListView.builder(
         shrinkWrap: true,
         itemCount: 4,
@@ -84,10 +86,10 @@ class _FavoriteScreenState extends State<FavoriteScreen> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Row(
-                              children: [
+                              children: const [
                                 Text("Bombay grill-Three layer",
-                                    style: const TextStyle(
-                                        color: const Color(0xff262b2e),
+                                    style: TextStyle(
+                                        color: Color(0xff262b2e),
                                         fontWeight: FontWeight.w600,
                                         fontFamily: "Muli",
                                         fontStyle: FontStyle.normal,
@@ -97,11 +99,11 @@ class _FavoriteScreenState extends State<FavoriteScreen> {
                                 FavButton(),
                               ],
                             ),
-                            Padding(
-                              padding: const EdgeInsets.only(top: 8),
+                            const Padding(
+                              padding: EdgeInsets.only(top: 8),
                               child: Text(
                                 "sells food, either fresh,specie,chilli",
-                                style: const TextStyle(
+                                style: TextStyle(
                                     color: Colors.black38,
                                     fontWeight: FontWeight.w600,
                                     fontSize: 12.0),
@@ -110,7 +112,7 @@ class _FavoriteScreenState extends State<FavoriteScreen> {
                             Padding(
                               padding: const EdgeInsets.only(top: 0),
                               child: Row(
-                                children: [
+                                children: const [
                                   Icon(
                                     Icons.star,
                                     color: Color(0xffffbc00),
@@ -127,8 +129,8 @@ class _FavoriteScreenState extends State<FavoriteScreen> {
                                   SizedBox(width: 10),
                                   Text(
                                     "4.9",
-                                    style: const TextStyle(
-                                        color: const Color(0xff000000),
+                                    style: TextStyle(
+                                        color: Color(0xff000000),
                                         fontWeight: FontWeight.w600,
                                         fontSize: 12.0),
                                   )
@@ -158,10 +160,10 @@ class _FavoriteScreenState extends State<FavoriteScreen> {
                                           child: Container(
                                             height: 23,
                                             width: 23,
-                                            decoration: BoxDecoration(
+                                            decoration: const BoxDecoration(
                                                 shape: BoxShape.circle,
                                                 color: Colors.black12),
-                                            child: Center(
+                                            child: const Center(
                                               child: Icon(
                                                 Icons.remove,
                                                 color: Colors.red,
@@ -181,8 +183,8 @@ class _FavoriteScreenState extends State<FavoriteScreen> {
                                                 child: Text(
                                                     _itemCount.toString(),
                                                     style: const TextStyle(
-                                                        color: const Color(
-                                                            0xff262b2e),
+                                                        color:
+                                                            Color(0xff262b2e),
                                                         fontWeight:
                                                             FontWeight.w400,
                                                         fontSize: 16.0),
@@ -200,10 +202,10 @@ class _FavoriteScreenState extends State<FavoriteScreen> {
                                           child: Container(
                                             height: 23,
                                             width: 23,
-                                            decoration: BoxDecoration(
+                                            decoration: const BoxDecoration(
                                                 shape: BoxShape.circle,
                                                 color: Color(0xffFF2E36)),
-                                            child: Center(
+                                            child: const Center(
                                               child: Icon(
                                                 Icons.add,
                                                 color: Colors.white,
@@ -218,10 +220,10 @@ class _FavoriteScreenState extends State<FavoriteScreen> {
                                   SizedBox(
                                       width: MediaQuery.of(context).size.width *
                                           0.2),
-                                  Text(
+                                  const Text(
                                     "₹199.00",
-                                    style: const TextStyle(
-                                        color: const Color(0xffff2e36),
+                                    style: TextStyle(
+                                        color: Color(0xffff2e36),
                                         fontWeight: FontWeight.w600,
                                         fontSize: 12.0),
                                   )
@@ -255,10 +257,10 @@ showAlertDialog(BuildContext context) {
         width: MediaQuery.of(context).size.width,
         child: Column(
           children: [
-            Text(
+            const Text(
               "        Are you sure  \n  you want to sign out?",
-              style: const TextStyle(
-                  color: const Color(0xff262b2e),
+              style: TextStyle(
+                  color: Color(0xff262b2e),
                   fontWeight: FontWeight.w400,
                   fontSize: 16.0),
             ),
@@ -275,13 +277,14 @@ showAlertDialog(BuildContext context) {
                       width: 120,
                       height: 40,
                       decoration: BoxDecoration(
-                          borderRadius: BorderRadius.all(Radius.circular(10)),
+                          borderRadius:
+                              BorderRadius.all(const Radius.circular(10)),
                           color: const Color(0xfffe2121).withOpacity(0.1)),
-                      child: Center(
+                      child: const Center(
                         child: Text(
                           "Cancel",
-                          style: const TextStyle(
-                              color: const Color(0xfffe2121),
+                          style: TextStyle(
+                              color: Color(0xfffe2121),
                               fontWeight: FontWeight.w600,
                               fontSize: 16.0),
                         ),
@@ -296,20 +299,17 @@ showAlertDialog(BuildContext context) {
                     child: Container(
                       width: 120,
                       height: 40,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                           borderRadius: BorderRadius.all(Radius.circular(10)),
                           gradient: LinearGradient(
                               begin: Alignment(0.5, 0),
                               end: Alignment(0.5, 1),
-                              colors: [
-                                const Color(0xffff461e),
-                                const Color(0xffff1054)
-                              ])),
-                      child: Center(
+                              colors: [Color(0xffff461e), Color(0xffff1054)])),
+                      child: const Center(
                         child: Text(
                           "Sure",
-                          style: const TextStyle(
-                              color: const Color(0xffffffff),
+                          style: TextStyle(
+                              color: Color(0xffffffff),
                               fontWeight: FontWeight.w600,
                               fontSize: 16.0),
                         ),

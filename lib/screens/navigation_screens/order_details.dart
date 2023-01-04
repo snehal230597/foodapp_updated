@@ -1,14 +1,17 @@
-import 'package:flutter/material.dart';
 import 'package:dotted_line/dotted_line.dart';
-import 'package:food_app/screens/FAQ_screen.dart';
+import 'package:flutter/material.dart';
 import 'package:food_app/screens/address.dart';
-import 'package:food_app/screens/order_history.dart';
-import 'package:food_app/screens/track_order.dart';
-
+import '../../comman_widgets/common_appbar.dart';
+import '../../utils/utils.dart';
+import '../FAQ_screen.dart';
 import '../chat_support_screen.dart';
 import '../coupon_screen.dart';
+import '../order_history.dart';
+import '../track_order.dart';
 
 class OrderDetailsScreen extends StatefulWidget {
+  const OrderDetailsScreen({Key? key}) : super(key: key);
+
   @override
   State<OrderDetailsScreen> createState() => _OrderDetailsScreenState();
 }
@@ -30,14 +33,142 @@ void handleClick(item) {
 
 class _OrderDetailsScreenState extends State<OrderDetailsScreen> {
   int _itemCount = 0;
-  GlobalKey<ScaffoldState> _key = GlobalKey();
-  List<int> _data = [for (var i = 0; i < 50; i++) i];
+  final GlobalKey<ScaffoldState> _key = GlobalKey();
+  final List<int> _data = [for (var i = 0; i < 50; i++) i];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       key: _key,
-      appBar: AppBar(
+      appBar: PreferredSize(
+        preferredSize: const Size.fromHeight(55),
+        child: CommonAppbar(
+          fontColor: Colors.black,
+          centerTitle: true,
+          title: 'Order Details',
+           backgroundColor: Colors.white,
+          shadowColor: Colors.white,
+          iconTheme: const IconThemeData(color: Colors.black),
+          fontWeight: FontWeight.w700,
+          rPadding: 5,
+          isBackEnable: true,
+          istrailingIcon: true,
+          lIcon: IconButton(
+            onPressed: () {
+              Utils.routsfunction(context, Container(), "back");
+            },
+            icon: const Icon(
+              Icons.arrow_back_ios,
+              color: Colors.black,
+            ),
+          ),
+          tIcon:  PopupMenuButton(
+          color: const Color(0xffFF2E36),
+          onSelected: (item) => handleClick(item),
+          itemBuilder: (context) => [
+            PopupMenuItem(
+              value: 0,
+              child: InkWell(
+                onTap: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (_) => OrderHistory(),
+                    ),
+                  );
+                },
+                child: Text(
+                  'Order history',
+                  style: const TextStyle(
+                      color: const Color(0xffffffff),
+                      fontWeight: FontWeight.w600,
+                      fontSize: 16.0),
+                ),
+              ),
+            ),
+            PopupMenuItem(
+              value: 1,
+              child: InkWell(
+                onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (_) => TrackOrderScreen()));
+                },
+                child: Text(
+                  'Track order',
+                  style: const TextStyle(
+                      color: const Color(0xffffffff),
+                      fontWeight: FontWeight.w600,
+                      fontSize: 16.0),
+                ),
+              ),
+            ),
+            PopupMenuItem(
+              value: 2,
+              child: InkWell(
+                onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (_) => CouponScreen()));
+                },
+                child: Text(
+                  'My Coupon',
+                  style: const TextStyle(
+                      color: const Color(0xffffffff),
+                      fontWeight: FontWeight.w600,
+                      fontSize: 16.0),
+                ),
+              ),
+            ),
+            PopupMenuItem(
+              value: 3,
+              child: InkWell(
+                onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (_) => FAQScreen()));
+                },
+                child: Text(
+                  'FAQ',
+                  style: const TextStyle(
+                      color: const Color(0xffffffff),
+                      fontWeight: FontWeight.w600,
+                      fontSize: 16.0),
+                ),
+              ),
+            ),
+            PopupMenuItem(
+              value: 4,
+              child: InkWell(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (_) => ChatSupportScreen(),
+                    ),
+                  );
+                },
+                child: Text(
+                  'Support',
+                  style: const TextStyle(
+                      color: const Color(0xffffffff),
+                      fontWeight: FontWeight.w600,
+                      fontSize: 16.0),
+                ),
+              ),
+            ),
+            PopupMenuItem(
+              value: 5,
+              child: Text(
+                'more',
+                style: const TextStyle(
+                    color: const Color(0xffffffff),
+                    fontWeight: FontWeight.w600,
+                    fontSize: 16.0),
+              ),
+            ),
+          ],
+        ),
+        ),
+      ),
+     /*
+      AppBar(
         elevation: 0.5,
         backgroundColor: Colors.white,
         centerTitle: true,
@@ -156,6 +287,8 @@ class _OrderDetailsScreenState extends State<OrderDetailsScreen> {
           ),
         ],
       ),
+
+      */
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.only(top: 20, left: 15, right: 15),
